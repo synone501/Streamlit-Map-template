@@ -1,4 +1,5 @@
 from pathlib import Path
+from pathlib import Path
 
 import folium
 import pandas as pd
@@ -32,8 +33,14 @@ st.divider()
 col_photo, col_texte = st.columns([1, 2])
 
 with col_photo:
+<<<<<<< HEAD
     ACCESSOIRE = Path(__file__).parent / "Accessoire"
     photo = ACCESSOIRE / "linkdin.png"    
+=======
+
+    ACCESSOIRE = Path(__file__).parent / "Accessoire"
+    photo = ACCESSOIRE / "linkdin.png"   
+>>>>>>> f8346f6 (nouneau)
     if photo.exists():
         st.image(str(photo), width=200)
 
@@ -57,7 +64,11 @@ with col_texte:
             st.switch_page("pages/1_Projets.py")
 
     with btn2:
+<<<<<<< HEAD
         cv_path = Path(__file__).parent / "Accessoire" / "CV_Ibrahim_Sinon.pdf"
+=======
+        cv_path = Path(__file__).parent / "Accessoire" / "CV_Ibrahim_Sinon.pdf"        
+>>>>>>> f8346f6 (nouneau)
         if cv_path.exists():
             st.download_button(
                 label="📄 Télécharger mon CV",
