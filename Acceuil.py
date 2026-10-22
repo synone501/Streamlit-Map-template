@@ -57,7 +57,7 @@ with col_texte:
             st.switch_page("pages/1_Projets.py")
 
     with btn2:
-        cv_path = Path(r"C:\Users\HP\OneDrive\Documents\stream-app\Accessoire\CV_Ibrahim_Sinon.pdf")
+        cv_path = Path(r"C:\Users\HP\port_fol_git_clone\Streamlit-Map-template\Accessoire\CV_Ibrahim_Sinon.pdf")
         if cv_path.exists():
             st.download_button(
                 label="📄 Télécharger mon CV",
