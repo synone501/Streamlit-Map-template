@@ -5,3 +5,4 @@ streamlit-folium
 matplotlib
 geopandas  
 leafmap
+pathlib
