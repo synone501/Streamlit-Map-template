@@ -6,7 +6,10 @@ import streamlit as st
 from folium.plugins import HeatMap
 from streamlit_folium import st_folium
 import leafmap.foliumap as leafmap
+from pathlib import Path
 
+ACCESSOIRE = Path(__file__).parent / "Accessoire"
+photo = ACCESSOIRE / "linkdin.png"
 st.set_page_config(
     page_title="Ibrahim Sinon | Portfolio",
     page_icon="🗺️",
@@ -29,7 +32,8 @@ st.divider()
 col_photo, col_texte = st.columns([1, 2])
 
 with col_photo:
-    photo = ACCESSOIRE / "C:\Users\HP\port_fol_git_clone\Streamlit-Map-template\Accessoire\linkdin.png"
+    ACCESSOIRE = Path(__file__).parent / "Accessoire"
+    photo = ACCESSOIRE / "linkdin.png"    
     if photo.exists():
         st.image(str(photo), width=200)
 
