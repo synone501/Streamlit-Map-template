@@ -29,7 +29,7 @@ st.divider()
 col_photo, col_texte = st.columns([1, 2])
 
 with col_photo:
-    photo = ACCESSOIRE / "linkdin.png"
+    photo = ACCESSOIRE / "C:\Users\HP\port_fol_git_clone\Streamlit-Map-template\Accessoire\linkdin.png"
     if photo.exists():
         st.image(str(photo), width=200)
 
