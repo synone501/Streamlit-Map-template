@@ -8,8 +8,11 @@ import pandas as pd
 from folium import Choropleth
 import leafmap.foliumap as leafmap
 
-plate = gpd.read_file(r"c:\Users\HP\OneDrive\Desktop\Training Datasets\Geospatial Learn Course Data\Plate_Boundaries\Plate_Boundaries\Plate_Boundaries.shp")
-quakes = gpd.read_file(r"C:\Users\HP\OneDrive\Desktop\Training Datasets\earthquakes.csv",encoding = 'utf-8')
+
+shp_path = Path(__file__).parent / "Accessoire" / "Plate_Boundaries" / "Plate_Boundaries.shp"
+csv_path = Path(__file__).parent / "Accessoire" / "earthquakes.csv"
+plate = gpd.read_file(shp_path)
+quakes = gpd.read_file(csv_path)
 
 # Conversion des types
 quakes['year'] = pd.to_numeric(quakes['year'], errors='coerce')
