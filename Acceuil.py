@@ -66,9 +66,6 @@ with col_texte:
     with btn2:
 <<<<<<< HEAD
         cv_path = Path(__file__).parent / "Accessoire" / "CV_Ibrahim_Sinon.pdf"
-=======
-        cv_path = Path(__file__).parent / "Accessoire" / "CV_Ibrahim_Sinon.pdf"        
->>>>>>> f8346f6 (nouneau)
         if cv_path.exists():
             st.download_button(
                 label="📄 Télécharger mon CV",
